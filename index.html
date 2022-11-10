@@ -7,13 +7,11 @@
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
-
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
 }
-
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -23,22 +21,17 @@ img {vertical-align: middle;}
   width: 100%;
   text-align: center;
 }
-
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 .fade {
   animation-name: fade;
   animation-duration: 3s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -46,7 +39,6 @@ body, html {
   height: 100%;
   margin: 0;
 }
-
 .bg {
   background-image: url("HinhAnh/uwp2076677.gif");
   height: 100%; 
@@ -54,42 +46,33 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.CanhGiua {
+.Mid {
 padding-top: 50%;
 }
-
 </style>
-
 </head>
 <body>
-<div class="bg">
-
-<div class="slideshow-container">
-<div class="CanhGiua">
-<div class="mySlides fade">
-  <img src="HinhAnh/TuaNguc.jpg" style="width:100%">
-  <div class="text">Anh Yeu Be Con</div>
-</div>
-
-<div class="mySlides fade">
-  <img src="HinhAnh/NhinNhau.jpg" style="width:100%">
-  <div class="text">Nguoi Gi Dau Ma Xinh Dep De Thuong Qua Ah</div>
-</div>
-
-<div class="mySlides fade">
-  <img src="HinhAnh/NgoiTrenDuoi.jpg" style="width:100%">
-  <div class="text">Om Ca The Gioi Luon Nay</div>
-</div>
-
-</div>
-</div>
-
-</div>
+  <div class="bg">
+    <div class="slideshow-container">
+      <div class="Mid">
+        <div class="mySlides fade">
+          <img src="HinhAnh/TuaNguc.jpg" style="width:100%">
+          <div class="text">Anh Yeu Be Con</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="HinhAnh/NhinNhau.jpg" style="width:100%">
+          <div class="text">Nguoi Gi Dau Ma Xinh Dep De Thuong Qua Ah</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="HinhAnh/NgoiTrenDuoi.jpg" style="width:100%">
+          <div class="text">Om Ca The Gioi Luon Nay</div>
+        </div>
+      </div>
+    </div>
+  </div>
 <script>
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -102,6 +85,5 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 </script>
-
 </body>
 </html> 
